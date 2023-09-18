@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/favicon.ico">
+    <title>My Dashboard</title>
+  </head>
+
+  <body>
+    <header>
+        <strong>Welcome to your dashboard!</strong>
+    </header>
+
+    <div>
+        <div>
+            <img src="res/images/me2.png" width="128" height="128" alt="My picture">
+        </div>
+        <div>
+            <ul>
+                <li>Sander Põldma</li>
+                <li> 28/01/2003</li>
+                <li> Software Engineering </li>
+            </ul>
+        </div>
+        <div>
+            <strong>2.65</strong>
+        </div>
+    </div>
+
+    <section>
+        <h1>Courses</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Course Title</th>
+                <th>Semester</th>
+                <th>Grade</th>
+                <th>Moodle</th>
+                <th>Courses</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Algoritmid ja Andmestruktuurid (LTAT.03.005)</td>
+                <td>fall</td>
+                <td>82</td>
+                <td>
+                    <a href="https://moodle.ut.ee/course/view.php?id=182" target="_blank">moodle</a>
+                </td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Web Application Development (LTAT.05.004)</td>
+                <td>fall</td>
+                <td>85</td>
+                <td>
+                    <a href="https://moodle.ut.ee/course/view.php?id=10889" target="_blank">moodle</a>
+                </td>
+                <td>
+                    <a href="https://courses.cs.ut.ee/2023/WAD/fall/Main/HomePage" target="_blank">courses</a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Operatsioonisüsteemid (LTAT.06.001)</td>
+                <td>fall</td>
+                <td>99</td>
+                <td>
+                    <a href="https://moodle.ut.ee/course/view.php?id=10892" target="_blank">moodle</a>
+                </td>
+                <td>
+                    <a href="https://courses.cs.ut.ee/2023/os/fall/Main/HomePage" target="_blank">courses</a>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Multimeedia (MTAT.03.132)</td>
+                <td>fall</td>
+                <td>65</td>
+                <td>
+                    <a href="https://moodle.ut.ee/course/view.php?id=235" target="_blank">moodle</a>
+                </td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Software Engineering (LTAT.05.003)</td>
+                <td>fall</td>
+                <td>65</td>
+                <td>
+                    <a href="https://moodle.ut.ee/course/view.php?id=9055" target="_blank">moodle</a>
+                </td>
+                <td>
+                    <a href="https://courses.cs.ut.ee/2023/SE2023/fall/Main/HomePage" target="_blank">courses</a>
+                </td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><b>My</b></td>
+                    <td><b>nice tfoot!!!</b></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="https://ois2.ut.ee/" target="_blank">OIS</a>
+            </li>
+            <li>
+                <a href="https://courses.cs.ut.ee/" target="_blank">Courses</a>
+            </li>
+        </ul>
+    </footer>
+    
+
+        <form action="/backend_action_page.php">
+
+            <label for="fname"><b>Course Title:</b></label><br>
+            <input type="text" id="fname" placeholder="title"><br>
+
+            <label for="Semester"><b>Semester:</b></label><br>
+            <select id="Semester" name="Semester">
+            <option value="Fall">fall</option>
+            <option value="Spring">spring</option>
+            </select><br>
+            
+            <label><b>Attendance:</b></label><br>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">Virtual</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">Physical</label><br>
+
+            <input type="submit" value="Submit">
+      </form>
+  </body>
+</html>
