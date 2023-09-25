@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="res/images/favicon.ico">
+    <link rel="stylesheet" href="res/css/style.css">
     <title>My Dashboard</title>
   </head>
 
   <body>
-    <header>
-        <strong>Welcome to your dashboard!</strong>
+    <header class="header">
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <a class="logo" href="#"><img src="res/images/me2.png" width="100" height="100" alt="My picture"></a>
     </header>
 
-    <div>
-        <div>
-            <img src="res/images/me2.png" width="128" height="128" alt="My picture">
-        </div>
-        <div>
+
+
+    <section>
+        <h1>Personal Information</h1>
+        <div class="nav">
             <ul>
                 <li>Sander Põldma</li>
                 <li> 28/01/2003</li>
@@ -112,6 +119,39 @@
         </table>
     </section>
 
+    <div class="grid">
+
+        <p>Course 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam voluptates veniam, alias modi nulla nobis nisi quo reprehenderit cupiditate, veritatis tenetur voluptate corporis corrupti ipsa, accusantium minus porro quae.</p>
+
+        <p>Course 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam voluptates veniam, alias modi nulla nobis nisi quo reprehenderit cupiditate, veritatis tenetur voluptate corporis corrupti ipsa, accusantium minus porro quae.</p>
+
+
+        <p>Course 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam voluptates veniam, alias modi nulla nobis nisi quo reprehenderit cupiditate, veritatis tenetur voluptate corporis corrupti ipsa, accusantium minus porro quae.</p>
+
+        <p>Course 4 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam voluptates veniam, alias modi nulla nobis nisi quo reprehenderit cupiditate, veritatis tenetur voluptate corporis corrupti ipsa, accusantium minus porro quae.</p>
+
+    </div>
+
+    <form action="/backend_action_page.php">
+
+        <label for="fname"><b>Course Title:</b></label><br>
+        <input type="text" id="fname" placeholder="title"><br>
+
+        <label for="Semester"><b>Semester:</b></label><br>
+        <select id="Semester" name="Semester">
+        <option value="Fall">fall</option>
+        <option value="Spring">spring</option>
+        </select><br>
+        
+        <label><b>Attendance:</b></label><br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">Virtual</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">Physical</label><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
     <footer>
         <ul>
             <li>
@@ -123,25 +163,5 @@
         </ul>
     </footer>
     
-
-        <form action="/backend_action_page.php">
-
-            <label for="fname"><b>Course Title:</b></label><br>
-            <input type="text" id="fname" placeholder="title"><br>
-
-            <label for="Semester"><b>Semester:</b></label><br>
-            <select id="Semester" name="Semester">
-            <option value="Fall">fall</option>
-            <option value="Spring">spring</option>
-            </select><br>
-            
-            <label><b>Attendance:</b></label><br>
-            <input type="radio" id="html" name="fav_language" value="HTML">
-            <label for="html">Virtual</label><br>
-            <input type="radio" id="css" name="fav_language" value="CSS">
-            <label for="css">Physical</label><br>
-
-            <input type="submit" value="Submit">
-      </form>
   </body>
 </html>
